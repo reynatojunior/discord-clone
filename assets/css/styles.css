@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image:  url("../img/Header\ Background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 459px;
+}
+
+.topo {
+    width: 100vw;
+    height: 459px;
+    align-content: center;
+    
+}
+
+.container {
+    width: 757px;
+    height: 270px;
+    align-content: center;
+    
+}
+
+.container > h1 {
+    text-align: center;
+    font-family: Luckiest Guy;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #ffffff;
+    }
