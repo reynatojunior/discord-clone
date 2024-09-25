@@ -1,34 +1,248 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
     margin: 0;
-    padding: 0;
+   
 }
-
-header{
-    background-image:  url("../img/Header\ Background.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 459px;
-}
-
 .topo {
-    width: 100vw;
-    height: 459px;
-    align-content: center;
+    background-image: url(../img/Header\ Background.png);
+    width: 100vw; /* Largura total da viewport */
+    min-height: 459px; /* Define uma altura mínima */
+    background-repeat: no-repeat;
+    background-size: cover; /* Altera para cover para cobrir toda a área */
+    text-align: center;
+    padding: 20px 0; /* Adiciona um padding em cima e embaixo, mantendo a largura total */
+    margin-left: calc(-50vw + 50%); /* Alinha o topo à esquerda da viewport */
+    margin-right: calc(-50vw + 50%); /* Alinha o topo à direita da viewport */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+
+
+
+.topo > h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw; /* Usa vw para tamanhos responsivos */
+    color: #FFFFFF;
+    padding-top: 3rem; /* Usar rem para responsividade */
+    padding-bottom: 1rem;
+}
+
+.topo > p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem; /* Usa rem para tamanhos responsivos */
+    color: #FFFFFF;
+    padding-bottom: 1rem;
     
+}
+
+button {
+    margin: 5px; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 50px;
+}
+
+#btn-2 {
+    background-color: black;
+    color: #FFFFFF;
 }
 
 .container {
-    width: 757px;
-    height: 270px;
-    align-content: center;
-    
+    max-width: 1200px; /* Mantém a largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0; /* Remova o padding para que a voz possa ocupar toda a largura */
 }
 
-.container > h1 {
-    text-align: center;
-    font-family: Luckiest Guy;
-    font-size: 56px;
+.space {
+    display: flex; /* Permite que a imagem e o texto fiquem lado a lado */
+    flex-direction: row; /* Direção do layout */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+}
+
+.space-img{
+    width: 607px;
+    height: 394px;
+}
+
+.space-text{
+    width: 348px;
+    height: 374px;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+#space-title{
+    width: 100%;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.47px;
+    text-align: left;
+    color: #23272A;
+}
+
+#space-description{
+    font-family: Open Sans;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 56px;
-    text-align: center;
-    color: #ffffff;
+    line-height: 21.79px;
+    text-align: left;
+    color: #23272A;
+
+}
+.voice {
+    width: 100vw; /* Largura total da viewport */
+    height: 448px; /* Altura fixa para a área */
+    background-color: #F6F6F6;
+    margin-top: 20px; /* Adiciona espaço entre as seções */
+    display: flex; /* Mantém os itens lado a lado */
+    flex-direction: row; /* Disposição horizontal */
+    padding: 20px; /* Adiciona um espaço interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    position: relative; /* Para lidar melhor com o posicionamento */
+    left: calc(50% - 50vw); /* Alinha a voz à esquerda */
+    align-content: center;
+}
+
+.voice-text {
+    display: flex;
+    flex-direction: column; /* Empilha título e descrição verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 351px; /* Ajuste conforme necessário */
+    height: 212px;
+    align-items: center;
+    margin-left: 15%;
+}
+
+#voice-title {
+    width: 100%; /* Mantém a largura do título em 100% */
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.47px;
+    text-align: left;
+    color: #23272A;
+    margin: 0; /* Remove margens padrão */
+    
     }
+
+#voice-description {
+    width: 100%; /* Mantém a largura da descrição em 100% */
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: #23272A;
+    margin: 0; /* Remove margens padrão */
+}
+
+.voice-img {
+    width: 607px; /* Ajuste conforme necessário */
+    height: 394px; /* Mantém a proporção da imagem */
+    max-height: 100%; /* Evita que a imagem exceda a altura do container */
+}
+.community {
+    display: flex; /* Permite que a imagem e o texto fiquem lado a lado */
+    flex-direction: row; /* Direção do layout */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+}
+
+.community-img {
+    width: 607px;
+    height: 394px;
+}
+
+.community-text {
+    width: 351px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+#community-title {
+    width: 100%;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.47px;
+    text-align: left;
+    color: #23272A;
+}
+
+#community-description {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: #23272A;
+}
+
+footer {
+    width: 100%;
+    height: 134px;
+    background: #23272A;
+    display: flex; 
+      justify-content: center; 
+    align-items: center; 
+}
+
+footer > img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Para telas do iPhone 14 Pro Max (430px de largura) */
+@media (max-width: 430px) {
+    .voice {
+        flex-direction: column; 
+        padding: 10px; 
+        height: auto; 
+    }
+
+    .voice-text, .voice-img {
+        width: 100%; 
+        text-align: center;
+    }
+
+    #voice-title {
+        font-size: 28px; 
+        line-height: 36px; 
+    }
+
+    #voice-description {
+        font-size: 14px; 
+        line-height: 20px; 
+    }
+
+    .community, .space {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .community-img, .space-img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .community-text, .space-text {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #community-title, #space-title {
+        font-size: 30px; /* Ajuste o tamanho da fonte */
+    }
+
+    #community-description, #space-description {
+        font-size: 14px; /* Ajuste o tamanho da fonte */
+    }
+}
